@@ -1,4 +1,4 @@
 {
-  "apiBase": "http://localhost:1976",
+  "apiBase": "https://apart-act-evaluations-ellis.trycloudflare.com",
   "apiKey": "AlphaFatura-Teste-202"
 }
