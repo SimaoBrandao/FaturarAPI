@@ -51,6 +51,9 @@
                 <label>Forma de pagamento
                   <input name="modoPag" required maxlength="10" placeholder="MB" />
                 </label>
+                <label>Condição de pagamento
+                  <input name="condicaoPagamento" required maxlength="5" placeholder="1" />
+                </label>
                 <label class="span-2">Observações
                   <input name="observacoes" />
                 </label>
@@ -84,7 +87,7 @@
                   <input name="localidade" />
                 </label>
                 <label>Código postal
-                  <input name="codigoPostal" />
+                  <input name="codigoPostal" value="0000" readonly />
                 </label>
                 <label class="check span-2">
                   <input name="pessoaSingular" type="checkbox" />
@@ -224,8 +227,14 @@
             <label>Localidade
               <input name="localidade" />
             </label>
+            <label>Forma de pagamento
+              <input name="modoPag" required maxlength="10" placeholder="MB" />
+            </label>
+            <label>Condição de pagamento
+              <input name="condicaoPagamento" required maxlength="5" placeholder="1" />
+            </label>
             <label>Código postal
-              <input name="codigoPostal" />
+              <input name="codigoPostal" value="0000" readonly />
             </label>
           </div>
           <button type="submit" class="btn">Criar ou reutilizar</button>

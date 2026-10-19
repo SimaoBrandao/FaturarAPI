@@ -20,9 +20,11 @@ function clienteDoForm(form) {
     nif: valorForm(form, "nif"),
     morada: valorForm(form, "morada"),
     localidade: valorForm(form, "localidade"),
-    codigoPostal: valorForm(form, "codigoPostal"),
+    codigoPostal: "0000",
     telefone: valorForm(form, "telefone"),
     email: valorForm(form, "email"),
+    condicaoPagamento: valorForm(form, "condicaoPagamento"),
+    modoPagamento: valorForm(form, "modoPag"),
     pessoaSingular: Boolean(valorForm(form, "pessoaSingular"))
   };
 }
@@ -89,6 +91,7 @@ async function emitir(event) {
     const pedido = {
       ordemServico: valorForm(form, "ordemServico"),
       data: valorForm(form, "data") || null,
+      condicaoPagamento: valorForm(form, "condicaoPagamento"),
       observacoes: valorForm(form, "observacoes"),
       iniciarDownload: document.querySelector("#iniciarDownload").checked,
       cliente: clienteDoForm(form),
